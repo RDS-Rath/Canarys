@@ -1,10 +1,10 @@
-### Canarys
+# Canarys Internship Project
+
 # Automated Tender Screening and Qualification Solution
 Using Text Analytics, NLP, Web Interface, and Chatbot Functionality
 
-## Phase 1: Tender Evaluation Engine
+## Phase 1: Extraction and Tabulation of Eligibility Criteria
 
-### Phase 1.1: Extraction and Tabulation of Eligibility Criteria
 
 **Objective:**
 Extract eligibility criteria from diverse tender documents and consolidate them into an Excel table for human review.
@@ -12,7 +12,7 @@ Extract eligibility criteria from diverse tender documents and consolidate them 
 **Expected Outcomes:**
 An Excel table containing extracted eligibility criteria from tender documents for human review.
 
-### Phase 1.2: Automated Evaluation of Tenders
+## Phase 2: Automated Evaluation of Tenders
 
 **Objective:**
 Develop a scoring algorithm that evaluates tenders based on the criteria tabulated in Phase 1.1.
@@ -21,14 +21,6 @@ Develop a scoring algorithm that evaluates tenders based on the criteria tabulat
 1. A Python-based scoring algorithm capable of evaluating multiple tenders.
 2. Integration of NLP for enhanced accuracy in the scoring system.
 
-## Phase 2: Web Interface
-
-**Objective:**
-Create a user-friendly web interface for uploading tenders, conducting evaluations, and viewing results.
-
-**Expected Outcomes:**
-1. A web-based platform facilitating easy tender upload and evaluation.
-2. Integration of Phase 1 evaluation engine into the web platform.
 
 ## Phase 3: Chatbot Functionality
 
