@@ -1,5 +1,6 @@
 import PyPDF2
 import tabula
+import tabula.io
 import pandas as pd
 import openpyxl
 
@@ -35,7 +36,7 @@ workbook = excel_writer.book
 with pd.ExcelWriter(output_excel_file, engine='openpyxl') as excel_writer:
     for page_num in range(len(pdf_reader.pages)):
         try:
-            tables = tabula.read_pdf(pdf_file, pages=page_num + 1, multiple_tables=True)
+            tables = tabula.io.read_pdf(pdf_file, pages=page_num + 1, multiple_tables=True)
             if tables:
                 for table in tables:
                     if search_keywords_in_table(table):
