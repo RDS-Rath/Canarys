@@ -3,3 +3,4 @@ PyPDF2==3.0.1
 tabula==1.0.5
 tabula-py==2.9.0
 openpyxl==3.1.2
+SQLAlchemy==2.0.23
