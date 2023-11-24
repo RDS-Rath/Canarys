@@ -20,3 +20,8 @@
    ```
    python EXCELtoMYSQL.py
    ```
+8. ExcelValidator.py checks the Excel file against criteria from a MySQL table, calculating a score based on the percentage of satisfied criteria.
+9. Repeat step 6 and run the script using
+   ```
+   python ExcelValidator.py
+   ```
