@@ -1,10 +1,12 @@
-## Dependencies and Installation
+### Overview
 ---------------------------------
 
 EXCELtoMYSQL.py reads Excel files from a specified directory, processes them using pandas, and then imports the data into a MySQL database using SQLAlchemy.
 
 ExcelValidator.py checks the Excel file against criteria from a MySQL table, calculating a score based on the percentage of satisfied criteria.
 
+### Dependencies and Installation
+---------------------------------
 1. Clone the repository in your local machine.
 2. Set up a Virtual Environment selecting python 3.11 as the interpreter. 
 3. Install the required dependencies by running the following command:
