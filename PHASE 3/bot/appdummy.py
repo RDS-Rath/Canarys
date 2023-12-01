@@ -12,7 +12,8 @@ from langchain.llms import HuggingFaceHub
 import os
 import fitz 
 
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = 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
+
+os.environ["HUGGINGFACEHUB_API_TOKEN"] = ' '
 
 def get_pdf_text(pdf_docs):
     text = ""
@@ -44,7 +45,7 @@ def get_vectorstore(text_chunks):
 
 def get_conversation_chain(vectorstore):
     
-    llm = HuggingFaceHub9(repo_id="google/flan-t5-xxl", model_kwargs={"temperature": 0.5, "max_length": 512}, huggingfacehub_api_token=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)
+    llm = HuggingFaceHub(repo_id="google/flan-t5-xxl", model_kwargs={"temperature": 0.5, "max_length": 512}, huggingfacehub_api_token=' ')
 
 
     memory = ConversationBufferMemory(
