@@ -1,0 +1,5 @@
+Flask 
+pandas 
+openpyxl 
+tabula-py 
+PyPDF2
