@@ -1,0 +1,9 @@
+```
+your_project/
+    app.py
+    uploads/
+    templates/
+        index.html
+        done.html
+        error.html
+```
