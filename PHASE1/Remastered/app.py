@@ -62,7 +62,7 @@ def upload_file():
 def process_pdf(pdf_file):
     try:
         pdf_reader = PyPDF2.PdfReader(open(pdf_file, 'rb'))
-        output_excel_file = os.path.join('uploads', 'output_tables.xlsx')
+        output_excel_file = os.path.join('uploads', 'output_table.xlsx')
         
         with pd.ExcelWriter(output_excel_file, engine='openpyxl') as excel_writer:
             for page_num in range(len(pdf_reader.pages)):
@@ -81,10 +81,11 @@ def process_pdf(pdf_file):
         return None
 
 # Route for downloading the processed Excel file
-@app.route('/download/<filename>')
-def download_file(filename):
-    path_to_file = 'uploads/' + filename  # Assuming the file is in the 'uploads' folder
-    return send_file(path_to_file, as_attachment=True)
+@app.route('/download/output_table.xlsx')
+def download_output_file():
+    uploads_folder = 'uploads'
+    file_path = os.path.join(uploads_folder, 'output_table.xlsx')
+    return send_file(file_path, as_attachment=True)
 
 if __name__ == '__main__':
     app.run(debug=True)
